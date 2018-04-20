@@ -1,0 +1,80 @@
+<div class="col-md-3"></div>
+<div class="container">
+   <div class=" col-md-6 ">
+      <%= form_for @student, :html => { :class => "form-horizontal" } do |f| %>
+      <% if @student.errors.any? %>
+      <h3 ><%= pluralize(@student.errors.count, "error") %> prohibited this student from being saved:</h3>
+      <% end %>
+      <div class="form-group">
+         <%= f.label :name, :class => 'control-label col-lg-2' %>
+         <div class="col-lg-10 ">
+            <%= f.text_field :name, :class => 'form-control' %>
+            <%=f.error_span(:name) %>
+        </div>
+    </div>
+    <div class="form-group">
+       <%= f.label :email, :class => 'control-label col-lg-2' %>
+       <div class="col-lg-10 ">
+          <%= f.text_field :email, :class => 'form-control' %>
+          <%=f.error_span(:email) %>
+      </div>
+  </div>
+  <div class="form-group">
+   <%= f.label :college, :class => 'control-label col-lg-2' %>
+   <div class="col-lg-10 ">
+      <%= f.text_field :college_name, :class => 'form-control' %>
+      <%=f.error_span(:college_name) %>
+  </div>
+</div>
+<div class="form-group">
+   <%= f.label :branch, :class => 'control-label col-lg-2' %>
+   <div class="col-lg-10 width" >
+     <%= f.select(:branch, [ 'CS', 'EC', 'EE', 'IT' ], {prompt: "Select Of Branch"}, { :class => 'select form-control', id: :student_branch }) %>
+     <%=f.error_span(:branch) %>
+ </div>
+</div>
+<div class="form-group">
+  <%= f.label :year, :class => 'control-label col-lg-2' %>
+  <div class="col-lg-10 width">
+    <%= f.select(:year, [ '2016', '2017', '2018' ], {prompt: "Select an Year"}, { :class => 'form-control', id: :student_year }) %>
+    <%=f.error_span(:year) %>
+</div>
+</div>
+<div class="form-group">
+   <%= f.label :semester, :class => 'control-label col-lg-2' %>
+   <div class="col-lg-10 width">
+      <%= f.select(:semester, ['7th', '8th' ], {prompt: "Select as Semester"}, { :class => 'select form-control', id: :student_semester  })%>
+      <%=f.error_span(:semester) %>
+  </div>
+</div>
+<div class="form-group">
+  <%= f.label :sgpa, :class => 'control-label col-lg-2' %>
+  <div class="col-lg-10 ">
+    <%= f.text_field :sgpa_last_semester, :class => 'form-control' %>
+    <%=f.error_span(:sgpa_last_semester) %>
+</div>
+</div>
+<div class="form-group">
+   <%= f.label :cgpa, :class => 'control-label col-lg-2' %>
+   <div class="col-lg-10 ">
+      <%= f.text_field :over_all_cgpa, :class => 'form-control' %>
+      <%=f.error_span(:over_all_cgpa) %>
+  </div>
+</div>
+<div class="form-group">
+   <%= f.label :status, :class => 'control-label col-lg-2' %>
+   <div class="col-lg-10 width">
+      <%= f.select(:status, [ 'Current', 'Passout' ], {}, { :class => 'select form-control', id: :student_status  })%>
+      <%=f.error_span(:status) %>
+  </div>
+</div>
+<div class="form-group">
+   <div class="col-lg-offset-2 col-lg-10">
+      <%= f.submit 'Registration', :class => 'btn btn--form' %>
+      <%= link_to t('.cancel', :default => t("helpers.links.cancel")),
+      students_path, :class => 'btn btn--form' %>
+  </div>
+</div>
+</div>
+<% end %>
+<div class="col-md-3"></div>

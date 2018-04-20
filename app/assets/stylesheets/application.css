@@ -1,0 +1,243 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require bootstrap_and_overrides
+ *= require_self
+ */
+/* Footer styles
+-------------------------------------------------- */
+.footer {
+	padding: 50px 0 20px 0;
+	background-color: #35404f;
+	color: #878c94;
+}
+.footer .title{text-align: left;color:#fff;font-size:25px;}
+.footer .social-icon{padding:0px;margin:0px;}
+.footer .social-icon a{display:inline-block;color:#fff;font-size:25px;padding:5px;}
+.footer .acount-icon a{display:block;color:#fff;font-size:18px;padding:5px;text-decoration:none;}
+.footer .acount-icon .fa{margin-right:25px;}
+.footer .category a {
+	text-decoration: none;
+	color: #fff;
+	display: inline-block;
+	padding: 5px 20px;
+	margin: 1px;
+	border-radius:4px;
+	margin-top: 6px;
+	background-color: black;
+	border: solid 1px #fff;
+}
+.footer .payment{margin:0px;padding:0px;list-style-type:none}
+.footer .payment li{list-style-type:none}
+.footer .payment li a {
+	text-decoration: none;
+	display: inline-block;
+	color: #fff;
+	float: left;
+	font-size: 25px;
+	padding: 10px 10px;
+}
+/*close footer*/
+/*body*/
+.btn--form {
+	padding: .5rem 2.5rem;
+	font-size: .95rem;
+	font-weight: 600;
+	text-transform: uppercase;
+	color: #fff;
+	border-radius:0px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	background: #111;
+	border-radius: remy(35px);
+	&:focus,
+	&:hover {background: lighten(#111, 13%);
+	}
+
+}
+.navbar {
+	position: relative;
+	min-height: 40px;
+	margin-bottom: 0px;
+	border: 0px solid #000;;
+	border-radius:0px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.col{
+	background-position: center;
+	background-size: cover;
+	display: block;
+	width: 100% !important;
+
+
+}
+.row{
+	width: 100% !important;
+}
+hr{
+	width: 102.2%;
+}
+.center{
+	text-align: center;
+	margin-left: 0%;
+}
+/*close body*/
+/*media query*/
+@media only screen and (max-width : 1200px) {
+	.container, .navbar, body, footer, .col {
+		width: 100% !important;
+	}
+	.row{
+		width: 100% !important;
+	}
+	div{
+		display: block;
+	}
+	body{
+		display: block;
+	}
+	#myCarousel{
+		width: 108.5%;height: 300px;
+		border-radius:0px;
+		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	}
+	.well{
+		left:4%; 
+	}
+	hr{
+		width:108%;
+	}
+	.center{
+		text-align: center;
+		margin-left: 2%;
+	}
+}
+
+@media only screen and (max-width : 979px) {
+	.container, .navbar, body, footer, .col {
+		width: 100% !important;
+	}
+	.row{
+		width: 100% !important;
+	}
+	div{
+		display: block;
+	}
+	body{
+		display: block;
+	}
+	#myCarousel{
+		width: 108.5%;height: 300px;
+		border-radius:0px;
+		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	}
+	.well{
+		left:4%; 
+	}
+	hr{
+		width:108%;
+	}
+	.center{
+		text-align: center;
+		margin-left: 2%;
+	}
+}
+
+@media only screen and (max-width : 767px) {
+	.container, .navbar, body, footer, .col {
+		width: 100% !important;
+	}
+	.row{
+		width: 100% !important;
+	}
+	div{
+		display: block;
+	}
+	body{
+		display: block;
+	}
+	#myCarousel{
+		width: 108.5%;height: 300px;
+		border-radius:0px;
+		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	}
+	.well{
+		left:4%; 
+	}
+	hr{
+		width:108%;
+	}
+	.center{
+		text-align: center;
+		margin-left: 2%;
+	}
+}
+
+@media only screen and (max-width : 480px) {
+	.container, .navbar, body, footer, .col {
+		width: 100% !important;
+	}
+	div{
+		display: block;
+	}
+	.row{
+		width: 100% !important;
+	}
+	body{
+		display: block;
+	}
+	#myCarousel{
+		width: 108.5%;height: 300px;
+		border-radius:0px;
+		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	}
+	.well{
+		left:4%; 
+	}
+	hr{
+		width:108%;
+	}
+	.center{
+		text-align: center;
+		margin-left: 2%;
+	}
+}
+
+@media only screen and (max-width : 320px) {
+	.container, .navbar, body, footer, .col {
+		width: 100% !important;
+	}
+	.row{
+		width: 100% !important;
+	}
+	div{
+		display: block;
+	}
+	body{
+		display: block;
+	}
+	#myCarousel{
+		width: 108.5%;height: 300px;
+		border-radius:0px;
+		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	}
+	.well{
+		left:4%; 
+	}
+	hr{
+		width:108%;
+	}
+	.center{
+		text-align: center;
+		margin-left: 5%;
+	}
+}
+/*close media query */

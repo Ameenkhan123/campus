@@ -1,0 +1,23 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  email: MyString
+  college_name: MyString
+  branch: MyString
+  year: 1
+  semester: MyString
+  sgpa_last_semester: 1.5
+  over_all_cgpa: 1.5
+  status: MyString
+
+two:
+  name: MyString
+  email: MyString
+  college_name: MyString
+  branch: MyString
+  year: 1
+  semester: MyString
+  sgpa_last_semester: 1.5
+  over_all_cgpa: 1.5
+  status: MyString
